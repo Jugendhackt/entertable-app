@@ -5,7 +5,7 @@ package eu.flawn.entertable;
  */
 public class Config {
     companion object {
-        final var serverAdress = "";
-        final var serverPort = 0;
+        final var serverAdress = "192.168.43.217";
+        final var serverPort = 1402;
     }
 }

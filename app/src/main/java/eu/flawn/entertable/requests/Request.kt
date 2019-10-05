@@ -1,13 +1,15 @@
 package eu.flawn.entertable.requests
 
+import eu.flawn.entertable.Config
+import eu.flawn.entertable.networking.SocketService
+
 /**
  * @author Flawn
  */
 
-class Request(data: String, host: String, port: Int){
-
+class Request(var data: String){
     fun start(): Int{
-
-        return 0;
+        SocketService(Config.serverAdress, Config.serverPort).execute(data);
+        return 1;
     }
 }

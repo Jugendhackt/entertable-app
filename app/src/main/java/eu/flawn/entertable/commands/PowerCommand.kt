@@ -1,6 +1,5 @@
 package eu.flawn.entertable.commands;
 
-import eu.flawn.entertable.Config
 import eu.flawn.entertable.requests.Request
 
 /**
@@ -13,7 +12,7 @@ public class PowerCommand : Command  {
     var status = 0;
     override var name = "PowerCommand";
     override fun sendRequest() {
-        var req = Request("${status}", Config.serverAdress, Config.serverPort)
+        var req = Request("${status}")
     }
 
 }

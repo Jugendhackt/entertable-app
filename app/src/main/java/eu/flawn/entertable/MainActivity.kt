@@ -3,6 +3,8 @@ package eu.flawn.entertable
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import eu.flawn.entertable.requests.Request
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var v = findViewById<View>(R.id.mainactivity);
-        v.setBackgroundColor(0xE4D1B8);
+        v.setBackgroundColor(0xEDF4EA);
+        onbutton.setOnClickListener {
+            var request = Request("YALLA HABU");
+            request.start();
+        }
     }
 }
